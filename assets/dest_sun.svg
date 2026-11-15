@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff2a8"/><stop offset="1" stop-color="#ff9a1f"/></radialGradient><radialGradient id="h"><stop offset=".55" stop-color="#ffb347" stop-opacity=".8"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="46" fill="url(#h)"/><circle cx="50" cy="50" r="28" fill="url(#g)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="sunCor" cx="50%" cy="50%" r="50%">
+      <stop offset="48%" stop-color="#fef08a" stop-opacity="0.95"/>
+      <stop offset="62%" stop-color="#f97316" stop-opacity="0.65"/>
+      <stop offset="80%" stop-color="#dc2626" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunPhoto" cx="42%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="32%" stop-color="#fef08a"/>
+      <stop offset="68%" stop-color="#f97316"/>
+      <stop offset="92%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </radialGradient>
+    <clipPath id="sunClip"><circle cx="50" cy="50" r="28"/></clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#sunCor)"/>
+  <circle cx="50" cy="50" r="28" fill="url(#sunPhoto)"/>
+  <g clip-path="url(#sunClip)">
+    <!-- Active magnetic plage & sunspots -->
+    <ellipse cx="39" cy="43" rx="6" ry="3.5" fill="#fffbeb" opacity="0.45"/>
+    <circle cx="38" cy="43" r="1.4" fill="#7c2d12" opacity="0.75"/>
+    <circle cx="41" cy="44" r="1" fill="#7c2d12" opacity="0.65"/>
+    <ellipse cx="60" cy="55" rx="7" ry="4" fill="#fffbeb" opacity="0.4"/>
+    <circle cx="59" cy="55" r="1.6" fill="#7c2d12" opacity="0.75"/>
+    <circle cx="62" cy="54" r="1.1" fill="#7c2d12" opacity="0.65"/>
+  </g>
+</svg>

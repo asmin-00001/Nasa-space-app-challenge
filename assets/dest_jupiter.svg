@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#f0d9b0"/><stop offset="1" stop-color="#b5835a"/></radialGradient></defs><clipPath id="c"><circle cx="50" cy="50" r="40"/></clipPath><g clip-path="url(#c)"><rect width="100" height="100" fill="url(#g)"/><path d="M0 32h100M0 46h100M0 62h100M0 74h100" stroke="#9c6b43" stroke-width="6" opacity=".55"/><ellipse cx="64" cy="60" rx="9" ry="5" fill="#c0603f"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="jBase" cx="34%" cy="30%" r="74%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="42%" stop-color="#e7c697"/>
+      <stop offset="78%" stop-color="#9a6b43"/>
+      <stop offset="100%" stop-color="#291709"/>
+    </radialGradient>
+    <radialGradient id="jShade" cx="32%" cy="28%" r="74%">
+      <stop offset="48%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#140903" stop-opacity="0.48"/>
+      <stop offset="94%" stop-color="#070301" stop-opacity="0.86"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.96"/>
+    </radialGradient>
+    <clipPath id="jClip"><circle cx="50" cy="50" r="42"/></clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="42" fill="url(#jBase)"/>
+  <g clip-path="url(#jClip)">
+    <!-- Zonal cloud belts & festoons -->
+    <path d="M6,22 Q50,26 94,22 L94,28 Q50,32 6,28 Z" fill="#854d27" opacity="0.78"/>
+    <path d="M6,33 Q50,36 94,33 L94,41 Q50,44 6,41 Z" fill="#9a3412" opacity="0.82"/>
+    <path d="M6,43 Q50,45 94,43 L94,51 Q50,53 6,51 Z" fill="#fef3c7" opacity="0.65"/>
+    <path d="M6,53 Q50,56 94,53 L94,63 Q50,66 6,63 Z" fill="#7c2d12" opacity="0.85"/>
+    <path d="M6,67 Q50,70 94,67 L94,74 Q50,77 6,74 Z" fill="#92400e" opacity="0.72"/>
+    <path d="M6,78 Q50,81 94,78 L94,84 Q50,87 6,84 Z" fill="#5c2d16" opacity="0.68"/>
+    <!-- Great Red Spot anticyclone -->
+    <ellipse cx="63" cy="59" rx="9.5" ry="5.5" fill="#9a3412" stroke="#fed7aa" stroke-width="0.9" stroke-opacity="0.7"/>
+    <ellipse cx="63" cy="59" rx="5.5" ry="3" fill="#ea580c" opacity="0.9"/>
+    <ellipse cx="63" cy="59" rx="2.5" ry="1.3" fill="#fdba74" opacity="0.75"/>
+    <circle cx="50" cy="50" r="42" fill="url(#jShade)"/>
+  </g>
+</svg>

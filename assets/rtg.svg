@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 34"><rect x="3" y="11" width="34" height="12" rx="2" fill="#4a4f57" stroke="#9aa3ad"/><g stroke="#c9d1da" stroke-width="2"><path d="M8 4v7M14 4v7M20 4v7M26 4v7M32 4v7M8 23v7M14 23v7M20 23v7M26 23v7M32 23v7"/></g><circle cx="3" cy="17" r="2" fill="#ffc857"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 34" width="40" height="34">
+  <defs>
+    <linearGradient id="rtgBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="30%" stop-color="#cbd5e1"/>
+      <stop offset="65%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="rtgFin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <!-- Top & bottom heat-rejection radiator fins -->
+  <g fill="url(#rtgFin)" stroke="#1e293b" stroke-width="0.6">
+    <polygon points="7,11 8.5,3 10.5,3 11,11"/>
+    <polygon points="13,11 14,3 16,3 16.5,11"/>
+    <polygon points="18.5,11 19,3 21,3 21.5,11"/>
+    <polygon points="23.5,11 24,3 26,3 27,11"/>
+    <polygon points="29,11 29.5,3 31.5,3 33,11"/>
+    <polygon points="7,23 8.5,31 10.5,31 11,23"/>
+    <polygon points="13,23 14,31 16,31 16.5,23"/>
+    <polygon points="18.5,23 19,31 21,31 21.5,23"/>
+    <polygon points="23.5,23 24,31 26,31 27,23"/>
+    <polygon points="29,23 29.5,31 31.5,31 33,23"/>
+  </g>
+  <!-- Central GPHS Pu-238 cylindrical housing -->
+  <rect x="4" y="10.5" width="33" height="13" rx="2.5" fill="url(#rtgBody)" stroke="#0f172a" stroke-width="1"/>
+  <line x1="12" y1="10.5" x2="12" y2="23.5" stroke="#0f172a" stroke-width="0.8"/>
+  <line x1="20" y1="10.5" x2="20" y2="23.5" stroke="#0f172a" stroke-width="0.8"/>
+  <line x1="28" y1="10.5" x2="28" y2="23.5" stroke="#0f172a" stroke-width="0.8"/>
+  <!-- Gold mounting flange & thermal telemetry node -->
+  <rect x="0.5" y="12" width="4" height="10" rx="1" fill="#334155" stroke="#0f172a" stroke-width="0.8"/>
+  <circle cx="2.5" cy="17" r="1.5" fill="#fbbf24"/>
+</svg>

@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#d3f6f7"/><stop offset="1" stop-color="#5fb7bd"/></radialGradient></defs><circle cx="50" cy="50" r="26" fill="url(#g)"/><ellipse cx="50" cy="50" rx="6" ry="42" fill="none" stroke="#cdeff0" stroke-width="2" opacity=".8" transform="rotate(8 50 50)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="uAtmo" cx="50%" cy="50%" r="50%">
+      <stop offset="68%" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#22d3ee" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="uSurf" cx="33%" cy="28%" r="74%">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="38%" stop-color="#67e8f9"/>
+      <stop offset="75%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+    <radialGradient id="uShade" cx="30%" cy="28%" r="74%">
+      <stop offset="48%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#041926" stop-opacity="0.48"/>
+      <stop offset="95%" stop-color="#020b12" stop-opacity="0.88"/>
+    </radialGradient>
+    <clipPath id="uBackRing"><rect x="0" y="0" width="50" height="100"/></clipPath>
+    <clipPath id="uFrontRing"><rect x="50" y="0" width="50" height="100"/></clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="44" fill="url(#uAtmo)"/>
+  <g transform="rotate(8 50 50)" clip-path="url(#uBackRing)">
+    <ellipse cx="50" cy="50" rx="7.5" ry="43" fill="none" stroke="#cffafe" stroke-width="1.6" opacity="0.65"/>
+    <ellipse cx="50" cy="50" rx="5.5" ry="37" fill="none" stroke="#a5f3fc" stroke-width="0.9" opacity="0.45"/>
+  </g>
+  <circle cx="50" cy="50" r="26" fill="url(#uSurf)"/>
+  <circle cx="50" cy="50" r="26" fill="url(#uShade)"/>
+  <g transform="rotate(8 50 50)" clip-path="url(#uFrontRing)">
+    <ellipse cx="50" cy="50" rx="7.5" ry="43" fill="none" stroke="#ecfeff" stroke-width="1.8" opacity="0.82"/>
+    <ellipse cx="50" cy="50" rx="5.5" ry="37" fill="none" stroke="#a5f3fc" stroke-width="0.9" opacity="0.5"/>
+  </g>
+</svg>

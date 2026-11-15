@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#f7dc9b"/><stop offset="1" stop-color="#b98a3e"/></radialGradient></defs><circle cx="50" cy="50" r="34" fill="url(#g)"/><path d="M18 42q32 -10 64 0M17 54q33 8 66 0M22 66q28 -8 56 0" stroke="#fff4cf" stroke-width="3" fill="none" opacity=".5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="vAtmo" cx="50%" cy="50%" r="50%">
+      <stop offset="76%" stop-color="#fde047" stop-opacity="0"/>
+      <stop offset="84%" stop-color="#facc15" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vSurf" cx="33%" cy="28%" r="74%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="35%" stop-color="#facc15"/>
+      <stop offset="72%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#291202"/>
+    </radialGradient>
+    <radialGradient id="vShade" cx="30%" cy="28%" r="74%">
+      <stop offset="48%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#1c0a01" stop-opacity="0.48"/>
+      <stop offset="95%" stop-color="#080300" stop-opacity="0.88"/>
+    </radialGradient>
+    <clipPath id="vClip"><circle cx="50" cy="50" r="36"/></clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#vAtmo)"/>
+  <circle cx="50" cy="50" r="36" fill="url(#vSurf)"/>
+  <g clip-path="url(#vClip)">
+    <!-- Characteristic ultraviolet/visible V-shaped sulfuric cloud bands -->
+    <path d="M12,34 Q42,26 68,42 Q42,40 12,48 Z" fill="#fef08a" opacity="0.42"/>
+    <path d="M12,50 Q48,42 78,54 Q46,56 12,62 Z" fill="#fef9c3" opacity="0.48"/>
+    <path d="M16,66 Q46,60 72,70 Q44,72 18,76 Z" fill="#92400e" opacity="0.38"/>
+    <circle cx="50" cy="50" r="36" fill="url(#vShade)"/>
+  </g>
+</svg>

@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#f3e5b8"/><stop offset="1" stop-color="#b79d63"/></radialGradient></defs><circle cx="50" cy="50" r="24" fill="url(#g)"/><ellipse cx="50" cy="52" rx="46" ry="12" fill="none" stroke="#d9c690" stroke-width="5" transform="rotate(-18 50 52)" opacity=".9"/><ellipse cx="50" cy="52" rx="38" ry="9" fill="none" stroke="#b9a56e" stroke-width="2" transform="rotate(-18 50 52)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="sGlobe" cx="35%" cy="30%" r="74%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="40%" stop-color="#e6cc8f"/>
+      <stop offset="78%" stop-color="#9c7e44"/>
+      <stop offset="100%" stop-color="#2b200c"/>
+    </radialGradient>
+    <radialGradient id="sShade" cx="32%" cy="28%" r="74%">
+      <stop offset="48%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#140e04" stop-opacity="0.48"/>
+      <stop offset="95%" stop-color="#050301" stop-opacity="0.88"/>
+    </radialGradient>
+    <clipPath id="sFrontRings"><rect x="0" y="50" width="100" height="50"/></clipPath>
+    <clipPath id="sBackRings"><rect x="0" y="0" width="100" height="51"/></clipPath>
+  </defs>
+  <!-- Back half of ring system -->
+  <g transform="rotate(-18 50 50)" clip-path="url(#sBackRings)">
+    <ellipse cx="50" cy="50" rx="46" ry="12.5" fill="none" stroke="#cbb582" stroke-width="3.6" opacity="0.85"/>
+    <ellipse cx="50" cy="50" rx="40.5" ry="10.8" fill="none" stroke="#f3e5b8" stroke-width="4.4" opacity="0.92"/>
+    <ellipse cx="50" cy="50" rx="35" ry="9.2" fill="none" stroke="#9c8452" stroke-width="2.4" opacity="0.65"/>
+    <!-- Planet shadow cast across back right ring -->
+    <path d="M62,38 L86,37 L84,48 L64,48 Z" fill="#050402" opacity="0.72"/>
+  </g>
+  <!-- Saturn Body -->
+  <circle cx="50" cy="50" r="23" fill="url(#sGlobe)"/>
+  <path d="M28,44 Q50,47 72,44" stroke="#b59457" stroke-width="2.2" fill="none" opacity="0.55"/>
+  <path d="M28,53 Q50,56 72,53" stroke="#9e7f47" stroke-width="2.6" fill="none" opacity="0.5"/>
+  <circle cx="50" cy="50" r="23" fill="url(#sShade)"/>
+  <!-- Front half of ring system -->
+  <g transform="rotate(-18 50 50)" clip-path="url(#sFrontRings)">
+    <ellipse cx="50" cy="50" rx="46" ry="12.5" fill="none" stroke="#d8c390" stroke-width="3.6" opacity="0.92"/>
+    <ellipse cx="50" cy="50" rx="40.5" ry="10.8" fill="none" stroke="#fef3c7" stroke-width="4.4" opacity="0.96"/>
+    <ellipse cx="50" cy="50" rx="35" ry="9.2" fill="none" stroke="#a38a56" stroke-width="2.4" opacity="0.72"/>
+  </g>
+</svg>

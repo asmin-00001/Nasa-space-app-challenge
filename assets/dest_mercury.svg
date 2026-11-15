@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#c4bfba"/><stop offset="1" stop-color="#5d5855"/></radialGradient></defs><circle cx="50" cy="50" r="32" fill="url(#g)"/><circle cx="40" cy="42" r="5" fill="#6d6865"/><circle cx="58" cy="58" r="7" fill="#6d6865"/><circle cx="60" cy="38" r="3" fill="#6d6865"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="meSurf" cx="33%" cy="28%" r="74%">
+      <stop offset="0%" stop-color="#e7e5e4"/>
+      <stop offset="38%" stop-color="#a8a29e"/>
+      <stop offset="74%" stop-color="#57534e"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </radialGradient>
+    <radialGradient id="meShade" cx="30%" cy="28%" r="74%">
+      <stop offset="46%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="76%" stop-color="#0c0a09" stop-opacity="0.52"/>
+      <stop offset="94%" stop-color="#000" stop-opacity="0.92"/>
+    </radialGradient>
+    <clipPath id="meClip"><circle cx="50" cy="50" r="34"/></clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="34" fill="url(#meSurf)"/>
+  <g clip-path="url(#meClip)">
+    <!-- Caloris Basin & crater rims -->
+    <circle cx="38" cy="40" r="8" fill="#57534e" opacity="0.55"/>
+    <path d="M30,38 A8,8 0 0,1 46,37" fill="none" stroke="#f5f5f4" stroke-width="1" stroke-opacity="0.6"/>
+    <circle cx="58" cy="56" r="9.5" fill="#44403c" opacity="0.6"/>
+    <path d="M49,53 A9.5,9.5 0 0,1 67,52" fill="none" stroke="#f5f5f4" stroke-width="1.1" stroke-opacity="0.55"/>
+    <circle cx="60" cy="34" r="4.5" fill="#44403c" opacity="0.6"/>
+    <path d="M56,33 A4.5,4.5 0 0,1 64,32" fill="none" stroke="#f5f5f4" stroke-width="0.9" stroke-opacity="0.65"/>
+    <circle cx="34" cy="62" r="6" fill="#44403c" opacity="0.55"/>
+    <path d="M28,60 A6,6 0 0,1 40,59" fill="none" stroke="#f5f5f4" stroke-width="0.9" stroke-opacity="0.5"/>
+    <line x1="60" y1="34" x2="46" y2="22" stroke="#f5f5f4" stroke-width="0.7" opacity="0.4"/>
+    <line x1="60" y1="34" x2="74" y2="44" stroke="#f5f5f4" stroke-width="0.7" opacity="0.4"/>
+    <circle cx="50" cy="50" r="34" fill="url(#meShade)"/>
+  </g>
+</svg>
